@@ -8,8 +8,6 @@
     <link rel="icon" type="image/png" href="src/letra-h____.png" />
     <title>Hely Pereira - Software Developer & Designer</title>
     <script src="scripts.js"></script>
-
-    
 </head>
 <body>
     <header> </header>
@@ -30,7 +28,8 @@
     </nav>
     <section id="container">
         <article class="main-title">
-            <h3>Design &<br>Development.</h3>
+
+            <h3>Design &<br>Development</h3>
             <p>Offering design services in a variety of areas such as branding, digital and graphic design.</p>
         </article>
         <article class="main-space">
@@ -38,15 +37,48 @@
 
         <section id="about">
             <article class="title_two">
-                <img src="src/letra-h.png" alt="about">
+                <img src="src/letra-h.png" alt="about" class="img-h">
+                <img src="src/default.png" alt="default" class="img-character-default">
+                <img src="src/down-left.png" alt="down left" class="img-character-down-left">
+                <img src="src/left.png" alt="left" class="img-character-left">
+                <img src="src/up-left.png" alt="up-left" class="img-character-up-left">
+                <img src="src/up.png" alt="up" class="img-character-up">
+                <img src="src/up-right.png" alt="up-right" class="img-character-up-right">
+                <img src="src/right.png" alt="right" class="img-character-right">
+                <img src="src/down-right.png" alt="down-right" class="img-character-down-right">
+                <img src="src/down.png" alt="down" class="img-character-down">
             </article>
             <article class="text-about">
-                <h3 class="animate-charcter">About</h3>
+                <h3 class="animate-charcter">Ab &nbsp;ut</h3> <div id="eye"><div id="eyeBall"></div></div>
+                <p>Hi! My name is Hely.</p>
                 <p>I'm a creative developer with years of experience in building products and appealing web experiences. I've collaborated with individuals and teams to build experiences for SMEs and large enterprises including Wise, Google, Interswitch and Intelia.
                     Each project is an opportuinity to learn new concepts across multiple domains including arts, maths and physics.
                     </p>
             </article>
         </section>    
-    <input type="text" value="ciaohely@gmail.com" id="email" disabled style="display: none">     
+        
+
+      <input type="text" value="ciaohely@gmail.com" id="email" disabled style="display: none">  
+
+
+<script>
+    var eyeBall = document.querySelector('#eyeBall');
+
+document.onmousemove = (event) => {
+    var x = event.clientX * 100 / window.innerWidth + "%";
+    var y = event.clientY * 100 / window.innerHeight + "%";
+    
+    eyeBall.style.transition = "0.5s";
+    eyeBall.style.left = x;
+    eyeBall.style.top = y;
+}
+
+document.onmouseout = (event) => {
+    eyeBall.style.transition = "0.9s";
+    eyeBall.style.left = "50%";
+    eyeBall.style.top = "50%";
+}
+</script>
+      
 </body>
 </html>
