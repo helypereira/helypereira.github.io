@@ -10,7 +10,6 @@ font-family: 'JetBrains Mono', monospace;
     color: white;
 }
 
-
 body{
     font-family: 'Work Sans', sans-serif;
     display: flex;
@@ -23,13 +22,17 @@ li{
     list-style: none;
 }
 
-a {
+.logo a{
+  background: none;
+}
+
+a, .popup {
     color: inherit;
     text-decoration: none;
     padding-bottom: 5px;
   }
   
-  a {
+  a, .popup{
     background:
       linear-gradient(
         to right,
@@ -42,14 +45,14 @@ a {
         rgba(255, 0, 180, 1),
         rgba(0, 100, 200, 1)
     );
-    background-size: 100% 1px, 0 1px;
+    background-size: 100% 1.5px, 0 1.5px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
   }
   
-  a:hover {
-    background-size: 0 1px, 100% 1px;
+  a:hover, .popup:hover{
+    background-size: 0 1.5px, 100% 1.5px;
     color: rgb(70, 70, 70);
   }
 
@@ -73,6 +76,7 @@ li.menu-element {
     margin: 0px 30px;
     font-size: 18px;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 .main-title h3 {
@@ -85,6 +89,7 @@ li.menu-element {
 .logo {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo img {
@@ -111,8 +116,8 @@ section#about {
 }
 
 section#about h3{
-    font-size: 150px;
-    font-weight: 100;
+    font-size: 100px;
+    
     margin-bottom: 0;
 }
 
@@ -121,7 +126,7 @@ article.text-about {
 }
 
 .animate-charcter {
-   text-transform: none;
+   text-transform: capitalize;
     background-image: linear-gradient(
     -225deg,
     #136aff 0%,
@@ -148,3 +153,57 @@ article.text-about {
     background-position: 200% center;
   }
 }
+
+/* popup */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    font-size: 12px;
+  }
+  
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

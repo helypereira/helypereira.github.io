@@ -6,28 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="src/letra-h____.png" />
-    <script src="scroll.js"></script>
-
-
-    
     <title>Hely Pereira - Software Developer & Designer</title>
+    <script src="scripts.js"></script>
+
     
 </head>
 <body>
     <header> </header>
     <nav>
         <div class="logo">
-            <img src="src/letra-h____.png" alt="letra h" width="15%" height="auto">
+            <a href="https://helypereira.github.io/"><img src="src/letra-h____.png" alt="letra h" width="15%" height="auto"></a>
 
             <h3 class="logo"></h3>
         </div>
+       
         <ul class="menu">
-            <li class="menu-element"><a href="#">About</a></li>
+            <li class="menu-element"><a href="#about">About</a></li>
             <li class="menu-element"><a href="#">Work</a></li> 
-            <li class="menu-element"><a href="#">Contact</a></li>
+            <li class="menu-element">
+                <div class="popup" onclick="popup()">Contact
+                <span class="popuptext" id="pop" onclick="copyToClipboard()">Copy to Clipboard</span>
+                </div>
+            </li>
         </ul>
     </nav>
-
     <section id="container">
         <article class="main-title">
             <h3>Design &<br>Development.</h3>
@@ -46,8 +48,7 @@
                     Each project is an opportuinity to learn new concepts across multiple domains including arts, maths and physics.
                     </p>
             </article>
-        </section>
-
-
+        </section>    
+    <input type="text" value="ciaohely@gmail.com" id="email" disabled style="display: none">     
 </body>
 </html>
