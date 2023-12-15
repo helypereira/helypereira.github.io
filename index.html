@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hely Pereira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="img/logo-letter-H.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav id="navigation">
+                <a href="index.html"><img src="img/logo-letter-H.png" alt="logo-h" class="logo"></a>
+                <ul class="menu">
+                    <li class="menu-element"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-element"><a href="#skills">Skills</a></li>
+                    <li class="menu-element"><a href="#contact" id="copy-to-clipboard">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="cover">
+                <article class="presentation">
+                    <h2 class="main-title">Hely Pereira <br>Almeida</h2>
+                    <p>Weaving lines of code with digital brushstrokes, 
+                        I merge the logic of programming with the creativity of graphic design to breathe life into unique digital projects.</p>
+                    <p>My passion lies in both coding and design, where I turn my client’s ideas into reality.
+                        Having worked with a range of innovative companies, I've honed my ability to strike a perfect harmony between 
+                        the technical and the aesthetic. Whether creating scripts to automate tasks or designing catalogs and graphic materials, 
+                        I create solutions that not only work but also visually captivate.</p>
+                    <p>If you're looking for someone who understands 
+                        the art of programming and graphic design, you're in the right place. 
+                        I'm excited to take your vision to the next level!
+                    </p>
+                    <br>
+                    <!-- <a href="#" class="download-button">Download CV</a>  -->
+                </article>
+                <img src="img/h.png" alt="image-h">
+            </section>
+            <section id="portfolio">
+                <h4 class="title portfolio-title animate-text-gray">Portfolio</h4>
+                <h5 class="portfolio-subtitle">Programming & Design</h5>
+                <article class="job">
+                    <img src="img/music-playground" alt="image job">
+                    <h4 class="job-title">Piano Play</h4>
+                    <h6 class="year"></h6>
+                    <div id="skill-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Illustrator</span>
+                    </div>
+                    <p class="job-description">Using HTML5, CSS3, and JavaScript, the project features 
+                        an interactive piano interface that responds to both mouse clicks and keyboard 
+                        keys, providing an immersive experience. With a responsive design, 
+                        "Music Playground" is accessible on various devices, from desktop 
+                        computers to mobile phones. Discover the code and connect with 
+                        the developer.</p>
+                    <div id="links">
+                        <a href="https://github.com/helypereira/JavaScript-Piano" target="_blank" class="link">See Code</a>
+                        <a href="https://helypereira.github.io/JavaScript-Piano/" target="_blank" class="link">Play</a>
+                    </div>
+                </article>
+                <article class="job">
+                    <h4 class="job-title">Blog (CRUD)</h4>
+                    <!-- <img src="img/blog-express.png" alt="image job"> -->
+                    <h6 class="year"></h6>
+                    <div id="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">EJS</span>
+                    </div>
+                    <p class="job-description">This code represents the implementation of a web server using Node.js 
+                        and Express for a simple blog system. It allows basic Create, Read, Update, and Delete (CRUD) 
+                        operations for blog entries, including support for images. Additionally, it utilizes the EJS template 
+                        engine to dynamically generate the blog views.
+                        The web application includes routes to view all entries, add new entries, edit and delete existing 
+                        entries, as well as view specific details of an entry. The Multer middleware is used to handle the 
+                        uploading of images associated with each entry. The code is modularly structured and follows Express 
+                        conventions for route and view handling.
+                        This project provides a practical introduction to essential web development concepts with Node.js 
+                        and Express and can serve as a starting point for more complex projects or for learning about web
+                        application development with JavaScript.</p>
+                    <div id="links">
+                        <a href="https://github.com/helypereira/Node-Blog-CRUD" target="_blank" class="link">See Code</a>
+                        <a href="https://sample-blog-198n.onrender.com/" target="_blank" class="link">Try</a>
+                    </div>
+                </article>
+                <article class="job">
+                    <h4 class="job-title">QR Generator</h4>
+                    <!-- <img src="img/qr-generator" alt="scheduler"> -->
+                    <h6 class="year"></h6>
+                    <div id="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                    </div>
+                    <p class="job-description">This project consists of a QR code generator implemented with Node.js 
+                        and Express.js Users can input text or a URL through a form on the website. Upon form submission,
+                        the server generates a QR code corresponding to the provided input and saves it as an image. 
+                        The QR code image is then displayed on the page for users to download or share.
+                        The application uses Express to handle routes and the server, while the Body-parser 
+                        middleware facilitates the handling of form data. QR code generation is accomplished using the qr-image library, 
+                        and the resulting image is saved in the server's file system. The user interface has been elegantly 
+                        designed and made responsive using HTML, CSS, and JavaScript.
+                        In summary, this project not only showcases skills in web development with Node.js and Express.js but also 
+                        demonstrates proficiency in integrating libraries for specific functionalities, such as QR code generation. 
+                        Furthermore, the responsive design ensures an optimal user experience across various devices.</p>
+                    <div id="links">
+                        <a href="https://github.com/helypereira/qr-generator" target="_blank" class="link">See Code</a>
+                        <a href="https://sample-qr-generator.onrender.com" target="_blank" class="link">TRY</a>
+                    </div>
+                </article>
+                <article class="job">
+                    <img src="img/publipan" alt="image job">
+                    <h4 class="job-title">Advertising design</h4>
+                    <h6 class="year"></h6>
+                    <div id="skill-tags">
+                        <span class="skill-tag">Graphic Design</span>
+                        <span class="skill-tag">Adobe Illustrator</span>
+                        <span class="skill-tag">Adobe Photoshop</span>
+                    </div>
+                    <p class="job-description">Using the powerful Adobe suite, with a particular 
+                        emphasis on tools like Illustrator and Photoshop, 
+                        I've brought visual concepts to life in various flexographic printing projects. 
+                        My role at the advertising agency Manantial de Ideas in Spain, the owner of the Publipan brand, 
+                        was notable for its presence in over 20 countries and a network of 500 franchises. 
+                        My responsibilities encompassed both the initial conception and meticulous review of designs. 
+                        I collaborated with a wide range of clients, from small local shops to prominent international 
+                        brands such as Coca-Cola, Nestlé, Telefónica, P&G, Danone, among others. 
+                        It's worth noting that my focus was on creating printed advertising materials 
+                        for items like bread bags, pharmacy bags, etc.</p>
+                </article>
+            </section>
+            <section id="skills">
+                <h4 class="title animate-text-gray">Skills</h4>
+                <article class="skill">
+                    <img src="img/organization.png" alt="soft skills">
+                    <h4 class="title-skill">Soft skills</h4>
+                    <ul>
+                        <li>Problem-solving</li>
+                        <li>Time management</li>
+                        <li>Multitasking</li>
+                        <li>Attention to detail</li>
+                        <li>Responsibility</li>
+                        <li>Strategic thinking</li>
+                        <li>Good decision making</li>
+                        <li>Conflict resolution</li>
+                        <li>Innovation</li>
+                        <li>Social skills</li>
+                        <li>Emotional intelligence</li>
+                    </ul>
+                </article>
+                <article class="skill">
+                    <img src="img/robotic-process-automation.png" alt="programming">
+                    <h4 class="title-skill">Programming</h4>
+                    <ul>
+                        <li>HTML, CSS, JavaScript, jQuery</li>
+                        <li>Express.js</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>API</li>
+                        <li>Git, Github and Version Control</li>
+                        <li>SQL, NoSQL, PostgreSQL</li>
+                    </ul>
+                </article>
+                <article class="skill">
+                    <img src="img/great-idea.png" alt="design">
+                    <h4 class="title-skill">Design</h4>
+                    <ul>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe InDesign</li>
+                        <li>Adobe After Effects</li>
+                        <li>Google SketchUp</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>For inquiries or to get started, click the "contact" button. I look forward to hearing from you!</p>
+                <div class="tooltip">
+                    <a href="#contact" id="copy-to-clipboard-footer">Contact</a>
+                </div>
+        </footer>
+    </div>
+    <div id="social">
+        <a href="https://github.com/helypereira" target="_blank"><img src="img/github.png" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/hely-pereira/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+        <!-- <a href="https://instagram.com/hely._.alm?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><img src="img/instagram.png" alt="Instagram"></a> -->
+    </div>
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
