@@ -264,6 +264,7 @@ article.presentation {
 
 #skill-tags {
     display: flex;
+    flex-wrap: wrap;
 }
 .skill-tag {
     background-color: white;
