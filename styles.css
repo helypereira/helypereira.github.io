@@ -371,7 +371,7 @@ footer a:hover{
 
 .menu-mobile img{
     display: none;
-    width:80px;
+    width:50px;
 }
 
 
@@ -393,8 +393,9 @@ footer a:hover{
     .menu {
         flex-wrap: wrap;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         display: none;
+        padding: 0 10px;
     }
 
     .mobileMenuShow {
@@ -406,8 +407,9 @@ footer a:hover{
     }
 
     .menu-element {
-        margin: 5px 0;
+        margin: 15px 0;
         font-size: 22px;    
+
     }
 
     #cover {
