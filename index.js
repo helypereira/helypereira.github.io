@@ -1,4 +1,3 @@
-/* Función copiar */
 function copyToClipboard(){
     var email = "almeidahely@gmail.com"
     const clipBoard = navigator.clipboard;
@@ -11,12 +10,13 @@ function copyToClipboard(){
 $("#copy-to-clipboard-footer").click(copyToClipboard);
 $("#copy-to-clipboard").click(copyToClipboard);
 
-$("main").hover(function(){
+$("#portfolio").hover(function(){
     $("#copy-to-clipboard").text("Contact"); 
     $("#copy-to-clipboard-footer").text("Contact"); 
     $("#copy-to-clipboard-footer").removeClass("copied");
     $("#copy-to-clipboard").removeClass("copied-contact");
 });
+
 
 
 $(document).ready(function() {
@@ -35,3 +35,16 @@ $(document).ready(function() {
         return false;
     });
 });
+
+
+function mobileMenu(event) {
+    // Detener la propagación del evento clic para evitar problemas de mostrar/ocultar rápidamente
+    event.preventDefault();
+
+    $(".menu").toggleClass("mobileMenuShow");
+
+    // Toggle a class on the body to prevent scrolling when the mobile menu is open
+    $("body").toggleClass("no-scroll");
+}
+
+$(".menu-mobile img").click(mobileMenu);

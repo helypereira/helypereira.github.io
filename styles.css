@@ -369,6 +369,12 @@ footer a:hover{
     transition: 0.5s;
 }
 
+.menu-mobile img{
+    display: none;
+    width:80px;
+}
+
+
 
 @media only screen and (max-width: 768px){
     body {
@@ -376,8 +382,10 @@ footer a:hover{
     }
 
     nav {
+        flex-wrap: wrap;
         justify-content: space-around;
     }
+
     .logo {
         width: 100px;
         margin-bottom: 24px;
@@ -386,7 +394,17 @@ footer a:hover{
         flex-wrap: wrap;
         flex-direction: column;
         width: 50%;
+        display: none;
     }
+
+    .mobileMenuShow {
+        display: block;
+    }
+
+    .menu-mobile img{
+        display: block;
+    }
+
     .menu-element {
         margin: 5px 0;
         font-size: 22px;    
